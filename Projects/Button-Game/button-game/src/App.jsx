@@ -9,11 +9,11 @@ function App() {
   // let counter = 15
 
   const addValue = () => {
-    setCounter(counter + 1)
+    setCounter(counter => counter + 1)
   }
   const reduceValue = () => {
     if(counter-1 >=0) 
-    setCounter(counter - 1)
+    setCounter(counter => counter - 1)
   }
   return (
     <>
